@@ -1,5 +1,7 @@
 #Practice git
 
+HEAD -> firstbranch : HEAD is a reference to the branch and commit we are looking at right now.
+
 ##Commands used
 - git init: Create a repository
 - git status: Compare working directory. staging area, and current branch
