@@ -8,4 +8,4 @@
 - git commit -m "xxx": Commit changes with a message description
 - git config: Set or get configuration
 - git log: Show the history of the project commits
-
+- git checkout: Check out branch (update HEAD and apply changes to working directory)
