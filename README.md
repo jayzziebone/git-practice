@@ -8,4 +8,5 @@
 - git commit -m "xxx": Commit changes with a message description
 - git config: Set or get configuration
 - git log: Show the history of the project commits
-
+- git branch -c <branch_name>: Create a branch
+- git checkout <branch_name>: Check out (switch to) branch_name
