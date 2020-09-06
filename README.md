@@ -1,4 +1,7 @@
-#Practice git
+# Practice git
+
+HEAD -> firstbranch : HEAD is a reference to the branch and commit we are looking at right now.
+
 
 ## Commands used
 - git init: Create a new git repository
@@ -8,7 +11,8 @@
 - git commit -m "xxx": Commit changes with a message description
 - git config: Set or get configuration
 - git log: Show the history ("aka log") of the project commits
-- git checkout: Check out branch (update HEAD and apply changes to working directory)
+- git checkout <branch_name>: Check out (switch to) branch_name. Check out branch (update HEAD and apply changes to working directory)
+- git branch -c <branch_name>: Create a branch
 - git merge: Merge changes from different branches
 
 
@@ -18,3 +22,4 @@ Merging means to bring changes from one branch to another
 
 - a fast-forward merge happens when the target branch was branched from the current one, and there are no new changes to the current branch since then.
 - An Automatic merge happens when the two histories have diverged, but git is able to reconcile them into one set of changes. This creates a new commit on the current branch.
+
