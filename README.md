@@ -11,12 +11,27 @@ HEAD -> firstbranch : HEAD is a reference to the branch and commit we are lookin
 - git commit -m "xxx": Commit changes with a message description
 - git config: Set or get configuration
 - git log: Show the history ("aka log") of the project commits
-- git checkout: Check out a branch (Update HEAD)
+- git show <commit_id>: Show a single commit
+- git diff: Show the difference between commits, the working directory, and the staging area
+- git checkout: Check out a branch (Update HEAD and apply changes to working directory)
 - git checkout <branch_name>: Check out (switch to) branch_name. Check out branch (update HEAD and apply changes to working directory)
 - git chechout -b <new_branch_name>: Create branch and check it out 
 - git branch: List of branches
 - git branch -c <branch_name>: Create a branch
 - git merge: Merge changes from different branches
+
+# Other Commands for show, log and diff
+
+- git log <branch_name> or <commit_id> : Show the history of the project commits from that commit or the ref or the branch_name
+- git log --all: Show history of the commits of all branches
+- git log --author "<author_name>": Show history of commit by the author
+- git log --oneline: Show history of commit in one liner (simplified format)
+- git log --oneline --graph --all: Show history of all Commit in a graph simplified format
+- git diff <commit_id>: Show differences between Working directory and <commit_id>
+- git diff --cached: Show the differences between staged files and HEAD
+- git log --oneline --all: Show history of all branches in simplified format
+- git diff <commit_id>..<commit_id>: show the differences between two commit
+- git diff --cached <commit_id>: Show the difference between staged file and a <commit_id>
 
 
 ## Merging
@@ -33,3 +48,5 @@ A branch is a reference (ref) to a commit. When HEAD points to a branch, it mean
 # What is HEAD?
 
 HEAD is a reference to the current branch or sometimes a commit. Commands like <status>, <log>, and <branch> use HEAD. <git checkout> updates HEAD to ref to a different branch.
+
+
