@@ -1,6 +1,6 @@
 #Practice git
 
-##Commands used
+## Commands used
 - git init: Create a repository
 - git status: Compare working directory. staging area, and current branch
 - git add: Add changes from working directory to staging area
@@ -10,3 +10,8 @@
 - git log: Show the history of the project commits
 - git checkout: Check out branch (update HEAD and apply changes to working directory)
 - git merge: Merge changes from different branches
+
+
+## Merging
+
+Merging means to bring changes from one branch to another
