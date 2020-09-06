@@ -8,4 +8,7 @@
 - git commit -m "xxx": Commit changes with a message description
 - git config: Set or get configuration
 - git log: Show the history of the project commits
+- git stash: Stash (save) changes from working directory
+- git stash list: List stashes
+- git stash pop: Apply stashed changes to working directory
 
