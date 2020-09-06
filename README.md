@@ -7,7 +7,7 @@
 - git commit: commit changes from staging area to current branch
 - git commit -m "xxx": Commit changes with a message description
 - git config: Set or get configuration
-- git log: Show the history of the project commits
+- git log: Show the history ("aka log") of the project commits
 - git checkout: Check out branch (update HEAD and apply changes to working directory)
 - git merge: Merge changes from different branches
 
