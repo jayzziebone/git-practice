@@ -25,6 +25,9 @@ HEAD -> firstbranch : HEAD is a reference to the branch and commit we are lookin
 - git stash: Stash (save) changes from working directory
 - git stash list: List stashes
 - git stash pop: Apply stashed changes to working directory
+- git remote add <remote_name> <url>: Add a new remote repository called <remote_name> at <url>
+- git remote -v: List remote repositories with their url
+- git push -u <remote_name> <branch_name>: Push <branch_name> to <remote_name>, and set default upstrem for <branch_name>
 
 # Other Commands for show, log and diff
 
