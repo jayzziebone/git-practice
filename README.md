@@ -28,6 +28,7 @@ HEAD -> firstbranch : HEAD is a reference to the branch and commit we are lookin
 - git remote add <remote_name> <url>: Add a new remote repository called <remote_name> at <url>
 - git remote -v: List remote repositories with their url
 - git push -u <remote_name> <branch_name>: Push <branch_name> to <remote_name>, and set default upstrem for <branch_name>
+- git fetch: Fetch changes from remote repository. If you do a fecth, you will have to do a git merge to update you local files.
 
 # Other Commands for show, log and diff
 
