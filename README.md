@@ -13,12 +13,15 @@ HEAD -> firstbranch : HEAD is a reference to the branch and commit we are lookin
 - git log: Show the history ("aka log") of the project commits
 - git show <commit_id>: Show a single commit
 - git diff: Show the difference between commits, the working directory, and the staging area
+- git diff <branch_name>: Show the difference between <branch_name> and the working directory
 - git checkout: Check out a branch (Update HEAD and apply changes to working directory)
 - git checkout <branch_name>: Check out (switch to) branch_name. Check out branch (update HEAD and apply changes to working directory)
 - git chechout -b <new_branch_name>: Create branch and check it out 
 - git branch: List of branches
 - git branch -c <branch_name>: Create a branch
 - git merge: Merge changes from different branches
+- git merge <branch_name> : Merge the master (or current branch) with the <branch_name>
+- git merge --abort: Abort a merge when there is a conflict
 - git stash: Stash (save) changes from working directory
 - git stash list: List stashes
 - git stash pop: Apply stashed changes to working directory
@@ -35,6 +38,13 @@ HEAD -> firstbranch : HEAD is a reference to the branch and commit we are lookin
 - git log --oneline --all: Show history of all branches in simplified format
 - git diff <commit_id>..<commit_id>: show the differences between two commit
 - git diff --cached <commit_id>: Show the difference between staged file and a <commit_id>
+- git log master..new-branch --oneline: Show the commits in new-branch that are not in master
+- git log new-branch..master --oneline: Show the commits in master that are not in new-branch
+- git log master...new-branch --oneline: Show the commits that differ between the two branch
+- git merge --no-commit --no-ff <branch_name>: Do a merge of <branch_name> without commit. Just to try and see what will be the result.
+
+git branch --no-merged master
+git branch --merged master
 
 
 ## Merging
