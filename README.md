@@ -19,6 +19,9 @@ HEAD -> firstbranch : HEAD is a reference to the branch and commit we are lookin
 - git branch: List of branches
 - git branch -c <branch_name>: Create a branch
 - git merge: Merge changes from different branches
+- git stash: Stash (save) changes from working directory
+- git stash list: List stashes
+- git stash pop: Apply stashed changes to working directory
 
 # Other Commands for show, log and diff
 
@@ -48,5 +51,3 @@ A branch is a reference (ref) to a commit. When HEAD points to a branch, it mean
 # What is HEAD?
 
 HEAD is a reference to the current branch or sometimes a commit. Commands like <status>, <log>, and <branch> use HEAD. <git checkout> updates HEAD to ref to a different branch.
-
-
