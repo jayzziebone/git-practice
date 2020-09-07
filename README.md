@@ -19,6 +19,7 @@ HEAD -> firstbranch : HEAD is a reference to the branch and commit we are lookin
 - git chechout -b <new_branch_name>: Create branch and check it out 
 - git branch: List of branches
 - git branch -c <branch_name>: Create a branch
+- git branch -a: List all the branch, even the remote branch
 - git merge: Merge changes from different branches
 - git merge <branch_name> : Merge the master (or current branch) with the <branch_name>
 - git merge --abort: Abort a merge when there is a conflict
@@ -26,9 +27,13 @@ HEAD -> firstbranch : HEAD is a reference to the branch and commit we are lookin
 - git stash list: List stashes
 - git stash pop: Apply stashed changes to working directory
 - git remote add <remote_name> <url>: Add a new remote repository called <remote_name> at <url>
+- git remote add origin https://github.com/jayzziebone/git-practice.git
 - git remote -v: List remote repositories with their url
 - git push -u <remote_name> <branch_name>: Push <branch_name> to <remote_name>, and set default upstrem for <branch_name>
 - git fetch: Fetch changes from remote repository. If you do a fecth, you will have to do a git merge to update you local files.
+- git pull: Fetch and merge at the same time.
+
+
 
 # Other Commands for show, log and diff
 
@@ -46,9 +51,8 @@ HEAD -> firstbranch : HEAD is a reference to the branch and commit we are lookin
 - git log new-branch..master --oneline: Show the commits in master that are not in new-branch
 - git log master...new-branch --oneline: Show the commits that differ between the two branch
 - git merge --no-commit --no-ff <branch_name>: Do a merge of <branch_name> without commit. Just to try and see what will be the result.
-
-git branch --no-merged master
-git branch --merged master
+- git branch --no-merged master: Which branch are not merged yet with master
+- git branch --merged master: Which branch are already merged with master
 
 
 ## Merging
@@ -65,3 +69,9 @@ A branch is a reference (ref) to a commit. When HEAD points to a branch, it mean
 # What is HEAD?
 
 HEAD is a reference to the current branch or sometimes a commit. Commands like <status>, <log>, and <branch> use HEAD. <git checkout> updates HEAD to ref to a different branch.
+
+## What's a remote?
+
+A remote repo is one hosted somewhere other than our local machine. We can add remote with 'git remote add', and set up *tracking branches* to track differences between our local and remote repositories.
+
+We push to remotes with 'git push', and fetch from them with 'git fetch'. We can also fetch and mrge in one set with 'git pull'.
